@@ -1,0 +1,26 @@
+.premium-plan-update {
+    padding: 20px;
+  }
+  
+  .plans-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .plan-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .price-input {
+    margin-right: 10px;
+    padding: 5px;
+  }
+  
+  .btn {
+    margin-top: 10px;
+  }
+  

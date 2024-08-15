@@ -1,0 +1,299 @@
+/* Setting the background gradient for the entire body */
+
+/* Styling for the BMI calculator container */
+.bmi-calculator-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the calculator horizontally */
+  position: relative; /* For absolute positioning of video */
+}
+
+/* BMI calculator styling */
+.bmi-calculator {
+  margin: 75px auto; /* Center the container with top and bottom margins */
+  width: 100%; /* Full width */
+  max-width: 500px; /* Maximum width */
+  display: table; /* Display as a table */
+  background: rgba(28, 28, 28, 0.8); /* Dark background with transparency */
+  color: #fff; /* Text color */
+  border-radius: 5px; /* Rounded corners */
+  padding: 20px; /* Padding */
+}
+
+/* Styling for the result section */
+.result {
+  display: table; /* Display as a table */
+  width: 100%; /* Full width */
+}
+
+/* Styling for the result text container */
+.result-text {
+  width: 100%; /* Full width */
+  display: table-cell; /* Display as a table cell */
+  vertical-align: middle; /* Vertically center the content */
+  text-align: center; /* Center the text horizontally */
+  padding: 20px; /* Padding around the text */
+  border: none; /* No border */
+  border-top-left-radius: 5px; /* Rounded top-left corner */
+  border-top-right-radius: 5px; /* Rounded top-right corner */
+
+}
+
+/* Styling for the BMI value in the result text */
+.result-text h1 {
+  color: #fff; /* White color for the text */
+  font-size: 3em; /* Large font size */
+  margin: 8px 0; /* Margin at top and bottom */
+  padding: 0; /* No padding */
+}
+
+/* Styling for the BMI category text in the result text */
+.result-text small {
+  font-size: 1em; /* Normal font size */
+  text-transform: uppercase; /* Uppercase text */
+  font-weight: 500; /* Normal weight */
+  color: #fcfcfb; /* Accent color */
+}
+
+/* Styling for the calculator section */
+.calculator {
+  padding: 20px; /* Padding around the calculator section */
+}
+
+/* Styling for the calculator title */
+.calculator-title {
+  font-weight: 400; /* Normal weight */
+  text-transform: uppercase; /* Uppercase text */
+  font-size: 1.5em; /* Medium-large font size */
+  padding: 15px; /* Padding around the title */
+  color: #cd7f49; /* Accent color */
+}
+
+/* Styling for the horizontal line in the calculator */
+.calculator-hr {
+  margin-top: -10px; /* Negative margin at the top */
+  width: 80%; /* 80% width */
+  border: 1.2px solid #f0f0f0; /* Solid border with the specified color */
+  border-radius: 15px; /* Rounded corners for the border */
+}
+
+/* General styling for range inputs */
+input[type='range'] {
+  -webkit-appearance: none; /* Remove default appearance in WebKit browsers */
+  width: 75%; /* 75% width */
+  height: 4px; /* 4px height */
+  background: #27283a; /* Dark background color for the track */
+  border-radius: 5px; /* Rounded corners for the track */
+  display: inline-block; /* Display as inline-block */
+  margin-top: -15px; /* Negative top margin */
+}
+
+/* Thumb styling for range inputs (Chrome/Safari) */
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove default appearance in WebKit browsers */
+  border: none; /* No border */
+  height: 14px; /* 14px height */
+  width: 14px; /* 14px width */
+  border-radius: 50%; /* Rounded thumb */
+  background: #cd7f49; /* Thumb color */
+  cursor: pointer; /* Pointer cursor */
+}
+
+/* Thumb styling for range inputs (Firefox) */
+input[type='range']::-moz-range-thumb {
+  height: 14px; /* 14px height */
+  width: 14px; /* 14px width */
+  border-radius: 50%; /* Rounded thumb */
+  background: #cd7f49; /* Thumb color */
+  cursor: pointer; /* Pointer cursor */
+}
+
+/* Thumb styling for range inputs (IE) */
+input[type='range']::-ms-thumb {
+  height: 14px; /* 14px height */
+  width: 14px; /* 14px width */
+  border-radius: 50%; /* Rounded thumb */
+  background: #cd7f49; /* Thumb color */
+  cursor: pointer; /* Pointer cursor */
+}
+
+/* Styling for the labels displaying the height and weight values */
+.field-text {
+  font-size: 2em; /* Large font size */
+  color: #cd7f49; /* Text color */
+  font-weight: 700; /* Bold text */
+  padding: 8px; /* Padding around the text */
+  display: inline-block; /* Display as inline-block */
+}
+
+/* Styling for the height label after content */
+.label-height::after {
+  content: ' cm'; /* Append ' cm' after the label */
+  font-size: 0.5em; /* Small font size */
+  color: #aeb446; /* Text color */
+  font-weight: 400; /* Normal weight */
+  text-align: center; /* Center the text */
+  margin-top: -12px; /* Negative top margin */
+}
+
+/* Styling for the weight label after content */
+.label-weight::after {
+  content: ' kg'; /* Append ' kg' after the label */
+  font-size: 0.5em; /* Small font size */
+  color: #969855; /* Text color */
+  font-weight: 400; /* Normal weight */
+}
+
+/* Styling for the submit button container */
+.submit {
+  text-align: center; /* Center the content */
+}
+
+/* Styling for the submit button */
+#submit {
+  background: #cd7f49; /* Base background color */
+  border: none; /* No border */
+  border-radius: 30px; /* Rounded corners */
+  padding: 4px 25px; /* Padding around the text */
+  color: #2b2d41; /* Text color */
+  font-size: 1.5em; /* Medium-large font size */
+  font-weight: 100; /* Light weight */
+  transition: all 0.3s ease-in; /* Smooth transition for all properties */
+  -webkit-font-smoothing: antialiased; /* Smoother font rendering in WebKit browsers */
+  -moz-osx-font-smoothing: grayscale; /* Smoother font rendering in macOS */
+  cursor: pointer; /* Pointer cursor */
+}
+
+/* Hover and focus states for the submit button */
+#submit:hover, #submit:focus {
+  color: #fff; /* White color */
+  outline: none; /* No outline */
+}
+
+/* Styling for the diet button container */
+.diet-button-container {
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+  margin-top: 20px; /* Space above the button */
+}
+
+/* Styling for the diet button */
+.diet-button {
+  padding: 10px 15px; /* Adjusted padding for smaller button */
+  background-color: #000000; /* Base background color */
+  color: #fefefe; /* Text color */
+  text-align: center; /* Center text */
+  text-decoration: none; /* No underline */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth background color transition */
+  font-size: 1.1em; /* Slightly smaller font size */
+}
+
+/* Hover state for the diet button */
+.diet-button:hover {
+  background-color: #cd7f49; /* Hover background color */
+}
+
+/* Background video container */
+.background-video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Place the video behind the content */
+}
+
+.background-video-container video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+.bmi-page-container {
+  position: relative;
+  min-height: 100vh;
+  background-color: #000000;
+}
+
+.background-video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.background-video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bmi-calculator-container {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+/* Home button styling */
+.home-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #cd7f49; /* Background color */
+  color: #ffffff; /* Text color */
+  font-size: 1.1em; /* Font size */
+  padding: 10px 20px; /* Padding */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  text-transform: uppercase; /* Uppercase text */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Hover state for the home button */
+.home-button:hover {
+  background-color: #cd7f49; /* Darker background color on hover */
+  color: #fff; /* Light text color on hover */
+}
+
+/* Diet button container styling */
+.diet-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the buttons horizontally */
+  margin-top: 20px; /* Space above the buttons */
+}
+
+/* Styling for the diet buttons */
+.diet-button {
+  padding: 10px 15px; /* Adjusted padding */
+  background-color: #000000; /* Base background color */
+  color: #fefefe; /* Text color */
+  text-align: center; /* Center text */
+  text-decoration: none; /* No underline */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth background color transition */
+  font-size: 1.1em; /* Slightly smaller font size */
+  margin-bottom: 10px; /* Space between buttons */
+  width: 200px; /* Fixed width for buttons */
+}
+
+/* Hover state for the diet buttons */
+.diet-button:hover {
+  background-color: #cd7f49; /* Hover background color */
+}
+.bmi-page-container {
+  position: relative;
+  min-height: 100vh;
+  background-color: #000000;
+}
+

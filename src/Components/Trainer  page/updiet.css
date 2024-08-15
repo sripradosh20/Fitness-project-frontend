@@ -1,0 +1,159 @@
+/* Navbar */
+.custom-navbar {
+  background-color: #000000;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.custom-logo {
+  height: 40px;
+}
+
+.custom-nav-link {
+  color: #000000;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+
+.custom-nav-link:hover {
+  color: #ffa800;
+}
+
+/* Container */
+.custom-container {
+  background-color: #1c1c1c;
+  color: #2c2828;
+  min-height: 100vh;
+  padding: 100px 20px 20px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Table */
+.custom-table {
+  background-color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 15px;
+  text-align: left;
+}
+
+.custom-table th {
+  background-color: #000000;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.custom-table td {
+  color: #000000;
+  border-bottom: 1px solid #444444;
+}
+
+/* Removed hover effect on table cells */
+
+/* Buttons */
+.custom-button {
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  padding: 8px 20px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 5px;
+  border: none;
+}
+
+.btn-primary.custom-button {
+  background-color: #cd7f49;
+  color: #000000;
+}
+
+.btn-primary.custom-button:hover {
+  background-color: #cd7f49;
+  color: #ffffff;
+}
+
+.btn-warning.custom-button {
+  background-color: #cd7f49;
+  color: #ffffff;
+}
+
+.btn-warning.custom-button:hover {
+  background-color: #d98810;
+  color: #ffffff;
+}
+
+.btn-danger.custom-button {
+  background-color: #e74c3c;
+  color: #ffffff;
+}
+
+.btn-danger.custom-button:hover {
+  background-color: #c0392b;
+}
+
+/* Modal */
+.custom-modal-header {
+  background-color: #cd7f49;
+  color: #000000;
+  border-bottom: none;
+  padding: 15px 20px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.modal-title {
+  font-size: 20px;
+  margin: 0;
+}
+
+.modal-body {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.form-control {
+  border-radius: 5px;
+  box-shadow: none;
+  border: 1px solid #555555;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 10px;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #ffa800;
+  background-color: #444444;
+}
+
+.modal-footer {
+  border-top: none;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-footer .custom-button {
+  margin-left: 10px;
+}
